@@ -9,28 +9,44 @@
 <body>
   <div class="wrap">
     <div class="content">
-      <h1>회원가입을 위해<br>정보를 입력해주세요</h1>
-      <label for="">*이메일</label>
-      <input class="info" type="email">
-      <label for="">*이름</label>
-      <input class="info" type="text">
-      <label for="">*비밀번호</label>
-      <input class="info" type="password">
-      <label for="">*비밀번호 확인</label>
-      <input class="info" type="password">
-      <select id="">
+      <div infoTitle>
+        <h1>회원가입을 위해<br>정보를 입력해주세요</h1>
+      </div>
+        <div class="innerBox" id="emailBox">
+          <label class="signUpText">*이메일</label>
+          <input class="info" id="email" type="email">
+        </div>
+        <div class="innerBox">
+          <label class="signUpText">*이름</label>
+          <input class="info" type="text">
+        </div>
+        <div class="innerBox">
+          <label class="signUpText">*비밀번호</label>
+          <input class="info" type="password">
+        </div>
+        <div class="innerBox">
+          <label class="signUpText">*비밀번호 확인</label>
+          <input class="info" type="password">
+        </div>
+
+      <!-- <select id="">
         <option disabled="true" selected="true">지역을 선택하세요</option>
         <option>서울</option>
         <option>경기</option>
         <option>인천</option>
-      </select>
-      <br><br>
-      <input type="radio" name="gender" class="genderRadio">여성
-      <input type="radio" name="gender" class="genderRadio">남성
-      <br><br>
-      <input type="checkbox"> 이용약관 개인정보 수집 및 동의
+      </select> -->
+    
+
+      <div class="radioBox">
+        <input type="radio" name="gender" class="genderRadio">여성
+        <input type="radio" name="gender" class="genderRadio">남성
+      </div>
+      <div class="checkBoxAgree">
+        <input type="checkbox"> <span>이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.</span>
+      </div>
+
       <hr>
-      <button>가입하기</button>
+      <button><span>가입하기</span></button>
       <!-- <input type="button" value="가입하기"> -->
     </div>
 
